@@ -4,7 +4,7 @@ This repository contains data from BPD's FIO [dataset](https://data.boston.gov/d
 
 Each row in the `fio_contacts.csv` file pertains to a single police "FIO", which could entail anything from observing people from afar to stopping, frisking, and arresting them. Each row in the `fio_people.csv` file pertains to a person involved in one of those FIOs. Each stop in `fio_contacts.csv` has a unique identifier, `fc_num`, that links to the people in `fio_people.csv` who were contacted.
 
-The code used to generate this file is presented in the ipython notebook included in this repo, and the specific transformations that that code performs are documented below.
+The code used to generate this file is presented in the jupyter notebook included in this repo, and the specific transformations that that code performs are documented below.
 
 _Disclaimer_: I've done my best to preserve or clarify the original meaning of all data points through cleaning and value reconciliation, but please assess for yourself whether you consider my approach valid before drawing conclusions from any analysis performed with this dataset. And if you _do_ find something fishy, don't hesistate to file an issue.
 
