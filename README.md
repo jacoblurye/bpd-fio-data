@@ -10,6 +10,7 @@ _Disclaimer_: I've done my best to preserve or clarify the original meaning of a
 
 
 
+
 ## Data-cleaning operations
 - Around 25 records in the **contacts** table contain duplicate `fc_num`s, which is supposed to be a unique 
     identifier for a given stop. Manual inspection of the data suggests this occurs when officers update the `basis`
