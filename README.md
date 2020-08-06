@@ -1,19 +1,12 @@
-# Boston Police Department Field Interrogation and Observation Dataset (2016-2019)
+# Boston Police Department Field Interrogation and Observation Dataset
 
-This repository contains data from BPD's FIO [dataset](https://data.boston.gov/dataset/boston-police-department-fio), merged across years and cleaned in two analysis-ready CSV files.
+This repository contains data from BPD's FIO [dataset](https://data.boston.gov/dataset/boston-police-department-fio), merged across years and cleaned in two analysis-ready CSV files. The merged files include data from the second half of 2015 through the end of 2019.
 
 Each row in the `fio_contacts.csv` file pertains to a single police field interrogation or observation event. Each row in the `fio_people.csv` file pertains to a person involved in one of those FIOs. Each stop in `fio_contacts.csv` has a unique identifier, `fc_num`, that links to the people in `fio_people.csv` who were contacted. Also included is `nested_fio_data.json`, a JSON object keyed on `fc_num` with each value representing a single FIO contact and the people it involved.
 
 The code used to generate this file is presented in the jupyter notebook included in this repo, and the specific transformations that that code performs are documented below.
 
 _Disclaimer_: I've done my best to preserve or clarify the original meaning of all data points through cleaning and value reconciliation, but please assess for yourself whether you consider my approach valid before drawing conclusions from any analysis performed with this dataset. And if you _do_ find something fishy, don't hesistate to file an issue.
-
-
-
-
-
-
-
 
 ## Data-cleaning operations
 - Around 25 records in the **contacts** table contain duplicate `fc_num`s, which is supposed to be a unique 
