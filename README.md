@@ -14,6 +14,7 @@ _Disclaimer_: I've done my best to preserve or clarify the original meaning of a
 
 
 
+
 ## Data-cleaning operations
 - Around 25 records in the **contacts** table contain duplicate `fc_num`s, which is supposed to be a unique 
     identifier for a given stop. Manual inspection of the data suggests this occurs when officers update the `basis`
@@ -48,6 +49,6 @@ _Disclaimer_: I've done my best to preserve or clarify the original meaning of a
 - Combine the **contacts** table's `street` and `streetaddr` columns into single `street` column, 
     drop `streedaddr`, and trim extra digits from `zip`.
 - The `sex` column in the **people** table might more accurately be called `gender`. Also, tweak column values accordingly.
+- Add a `year` column derived from the `contact_date` column.
 - The values `''`, `'NULL'`, and `'None'` are used to signify no value was entered in various fields across the dataset.
     Replace these values with `np.nan`.
-- Add a year column derived from the contactDate column
